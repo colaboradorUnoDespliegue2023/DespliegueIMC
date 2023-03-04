@@ -42,9 +42,8 @@ public class JavadocDespliegue {
         
         //Creamos objetos con cada constructor
         Persona persona1 = new Persona();
-        Persona persona2 = new Persona(nombre, edad, sexo);
         Persona persona3 = new Persona(nombre, edad, sexo, peso, altura);
-        Persona persona4 = new Persona();
+        Persona persona5 = new Persona();
  
         //Los datos que no esten completos los insertamos con los metodos set
         persona1.setNombre("Laura");
@@ -52,15 +51,12 @@ public class JavadocDespliegue {
         persona1.setSexo('M');
         persona1.setPeso(60);
         persona1.setAltura(1.60);
- 
-        persona2.setPeso(90.5);
-        persona2.setAltura(1.80);
-        
-        persona4.setNombre("David");
-        persona4.setEdad(26);
-        persona4.setSexo('H');
-        persona4.setPeso(80);
-        persona4.setAltura(1.80);
+
+        persona5.setNombre("David");
+        persona5.setEdad(26);
+        persona5.setSexo('H');
+        persona5.setPeso(80);
+        persona5.setAltura(1.80);
  
         //Usamos metodos para realizar la misma accion para cada objeto
         System.out.println("Persona1");
@@ -68,20 +64,16 @@ public class JavadocDespliegue {
         MuestraMayorDeEdad(persona1);
         System.out.println(persona1.toString());
  
-        System.out.println("Persona2");
-        MuestraMensajePeso(persona2);
-        MuestraMayorDeEdad(persona2);
-        System.out.println(persona2.toString());
-        
-        System.out.println("Persona4");
-        MuestraMensajePeso(persona4);
-        MuestraMayorDeEdad(persona4);
-        System.out.println(persona4.toString());
- 
         System.out.println("Persona3");
         MuestraMensajePeso(persona3);
         MuestraMayorDeEdad(persona3);
         System.out.println(persona3.toString());
+                       
+        System.out.println("Persona4");
+        MuestraMensajePeso(persona5);
+        MuestraMayorDeEdad(persona5);
+        System.out.println(persona5.toString());
+        
     }
  
     public static void MuestraMensajePeso(Persona p) {
